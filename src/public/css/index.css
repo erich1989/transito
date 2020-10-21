@@ -1,0 +1,216 @@
+
+
+/* ---------estilos componente header-index-------------- */
+
+.columna-izquierda-header-index{
+    height: 700px;
+}
+
+.comparendos{
+    color: #007bff;
+}
+
+.columna-izquierda-header-index h5{
+  color:#869ab8;
+}
+
+.caja-columna-derecha-header-index{
+    background-image: url('../images/work.jpg');
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+ 
+}
+
+
+/* estilos componente cards index */
+
+#cards-index{
+  background-color:#f7faff;
+}
+
+.card-index{
+    background-color:#007bff;
+    color: white;
+    transition: all 0.5s;
+}
+.card-index:hover {
+    transform: translate(0, -5px);
+    background-color: white !important; 
+    color: black;
+    -webkit-box-shadow: 10px 10px 20px -1px rgba(0,0,0,0.35);
+    -moz-box-shadow: 10px 10px 20px -1px rgba(0,0,0,0.35);
+    box-shadow: 10px 10px 20px -1px rgba(0,0,0,0.35);
+}
+
+
+/* ------------------animaciones------------------ */
+
+.animadoproposal {
+    opacity: 0;
+    transition: all 0.5s;
+  }
+  
+  
+  .mostrarIzquierdaProposal {
+    animation: mostrarIzquierdaProposal 1s;
+    animation-delay: 0.2s;
+    transition-delay: 0.2s;
+  }
+  
+  @keyframes mostrarIzquierdaProposal {
+    0% {
+      transform: translateX(-60px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .mostrarArribaProposal {
+    animation: mostrarArribaProposal 1s;
+    animation-delay: 0.7s;
+    transition-delay: 0.7s;
+  }
+  
+  @keyframes mostrarArribaProposal {
+    0% {
+      transform: translateY(60px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .mostrarDerechaProposal {
+    animation: mostrarDerechaProposal 1s;
+    animation-delay: 1.2s;
+    transition-delay: 1.2s;
+  }
+  
+  @keyframes mostrarDerechaProposal {
+    0% {
+      transform: translateX(60px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+
+  /* animacion componente services-index */
+
+  .animadoservices {
+    opacity: 0;
+    transition: all 0.5s;
+  }
+  
+  .mostrarArribaService {
+    animation: mostrarArribaService 1s;
+    /* animation-delay: .2s;
+    transition-delay: .2s; */
+  }
+  
+  @keyframes mostrarArribaService {
+    0% {
+      transform: translateY(60px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  /* -----------------estilos componente services-index---------------- */
+
+
+  .row-service{
+    background-color: #f7faff;
+    box-shadow:  0 0.125rem 0.25rem rgba(0,0,0,0.075);
+    height: 400px !important;
+  }
+
+  .number-service{
+    color: #007bff!important;
+  }
+  
+  .image-services-soporte{
+    width: 70%;
+  }
+
+  .columna-izquierda-servicios{
+    clip-path: circle(95.8% at 0 51%);
+    height: 100%;
+    position: relative;
+  }
+
+  .overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #161c2d;
+    opacity: .6;
+  }
+
+  .columna-izquierda-servicios-2{
+    clip-path: circle(93.4% at 100% 51%);
+    height: 100%;
+  }
+
+  .columna-central-servicios{
+    /* width: 90%; */
+  }
+
+  .btn-1{
+    background-color:#f5f6fe ;
+    font-weight: 700;
+    padding: 0.6rem 1.25rem;
+    border: none;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 1.5;
+    border-radius: .25rem;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+    color: #4550E6;
+  }
+  
+  .btn-1 i {
+    vertical-align: -.125em
+  }
+  
+  .btn-1:hover{
+    color: #4550E6;
+    /* transform: scale(1.04); */
+    -webkit-box-shadow: 10px 10px 15px -5px rgba(0,0,0,0.27);
+    -moz-box-shadow: 10px 10px 15px -5px rgba(0,0,0,0.27);
+    box-shadow: 10px 10px 15px -5px rgba(0,0,0,0.27);
+  }
+
+  .image-services{
+    object-fit: cover;
+  }
+
+
+  /* -----------estilos componente footer------------ */
+
+  footer {
+    color: white;
+    background: #21325b ;
+  }
+
+  .terminos a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .terminos a:hover{
+    color: gainsboro;
+  }

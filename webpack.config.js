@@ -11,7 +11,7 @@ const config = {
         publicPath:"https://erich1989.github.io/transito/"
         },
 
-    mode: 'development',    
+    mode: 'production',    
 
     module: {
         rules:[

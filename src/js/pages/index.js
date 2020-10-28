@@ -1,7 +1,8 @@
 import Navigation from '../components/navigation';
 import Header from '../components/headerIndex';
-import Cards from '../components/cardsIndex';
 import Services from '../components/servicesIndex';
+import Cards from '../components/cardsIndex';
+import CallMe from '../components/callMe';
 import CasesOfSuccess from '../components/casesOfSuccessIndex';
 import Prices from '../components/pricingIndex';
 import Footer from '../components/footer';
@@ -13,8 +14,9 @@ import "../../public/css/index.css";
 const renderIndex = () =>{
     Navigation();
     Header();
-    Cards();
     Services();
+    Cards();
+    CallMe();
     CasesOfSuccess();
     Prices();
     Footer();

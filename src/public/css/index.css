@@ -1,9 +1,52 @@
+body {
+  font-family: Roboto,sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.625;
+}
+
+/* ---------------estilos componente navigation-------------- */
+.header-top-line, .header-main, .button-services, .btn, a, .parrafo-primario-services, .text-1-call-me, .text-1-cases-of-success {
+  font-family:'Arimo', sans-serif;
+  letter-spacing: .125rem;
+  font-weight: 700;
+  font-size: .75rem;
+  line-height: 1.5;
+}
+
+.nav-link{
+  color: #000 !important;
+}
+.nav-link:hover{
+  color: #007bff !important;
+  
+}
+
+.boton-facebook:hover{
+  background-color:#007bff !important ;
+}
 
 
 /* ---------estilos componente header-index-------------- */
+#header-index{
+  background-image: url(../images/negocios.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.overlay{
+  position: absolute;
+  background-color: #161c2d;
+  opacity: .7;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
 
 .columna-izquierda-header-index{
-    height: 700px;
+    height: 500px;
+    
 }
 
 .comparendos{
@@ -15,21 +58,18 @@
 }
 
 .caja-columna-derecha-header-index{
-    background-image: url('../images/work.jpg');
     width: 100%;
     height: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
- 
 }
 
 
 /* estilos componente cards index */
 
 #cards-index{
-  background-color:#f7faff;
+  background-color:#f9f9f9!important;
 }
 
 .card-index{
@@ -125,47 +165,20 @@
 
   /* -----------------estilos componente services-index---------------- */
 
-
-  .row-service{
-    background-color: #f7faff;
-    box-shadow:  0 0.125rem 0.25rem rgba(0,0,0,0.075);
-    height: 400px !important;
+  .container-services{
+   
   }
 
-  .number-service{
-    color: #007bff!important;
-  }
-  
-  .image-services-soporte{
-    width: 70%;
-  }
-
-  .columna-izquierda-servicios{
-    clip-path: circle(95.8% at 0 51%);
-    height: 100%;
-    position: relative;
-  }
-
-  .overlay{
-    position: absolute;
-    left: 0;
-    top: 0;
+  .services-header-image1{
+    background-image: url(../images/work.jpg);
+    background-size: cover;
+    background-position: center;
     width: 100%;
     height: 100%;
-    background: #161c2d;
-    opacity: .6;
   }
+ 
 
-  .columna-izquierda-servicios-2{
-    clip-path: circle(93.4% at 100% 51%);
-    height: 100%;
-  }
-
-  .columna-central-servicios{
-    /* width: 90%; */
-  }
-
-  .btn-1{
+  /* .btn-1{
     background-color:#f5f6fe ;
     font-weight: 700;
     padding: 0.6rem 1.25rem;
@@ -183,11 +196,11 @@
   
   .btn-1 i {
     vertical-align: -.125em
-  }
+  }*/
   
   .btn-1:hover{
     color: #4550E6;
-    /* transform: scale(1.04); */
+    transform: scale(1.04);
     -webkit-box-shadow: 10px 10px 15px -5px rgba(0,0,0,0.27);
     -moz-box-shadow: 10px 10px 15px -5px rgba(0,0,0,0.27);
     box-shadow: 10px 10px 15px -5px rgba(0,0,0,0.27);
@@ -214,3 +227,63 @@
   .terminos a:hover{
     color: gainsboro;
   }
+
+  /* ------------estilos componente call-me------------------- */
+
+  #call-me{
+    background-image: url(../images/car.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+  }
+
+
+  /* ------------------media-queries----------------------- */
+
+  @media screen and (max-width: 575.98px) {
+
+    /* header-index */
+
+    .container-header-index {
+      
+    }
+ 
+    #header-index{
+      
+      width: 100%;
+      height: 100%;
+
+    }
+
+    .title-header{
+      font-size: 2.5rem;
+    }
+
+    .columna-izquierda-header-index {
+      height: 420px;
+    }
+
+    /* services-index */
+
+    
+  }
+
+  @media screen and (min-width: 576px) and (max-width: 767.98px) { 
+
+    /* header-index */
+
+    #header-index{
+      margin-top: 60px;
+      width: 100%;
+      height: 100%;
+    }
+
+    .columna-izquierda-header-index{
+      height: 600px;
+    }
+
+     /* services-index */
+
+    
+    
+   }

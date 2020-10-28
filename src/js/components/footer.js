@@ -14,8 +14,8 @@ function Footer () {
             </div>
             <div class="text-left">
               <h5 class="mb-3">Contáctanos:</h5>
-              <p>Cel:3012100844</p>
-              <p>Correo:compudev@gmail.com</p>
+              <p>Cel: 3012100844</p>
+              <p>Correo: transito@gmail.com</p>
               <div class="d-flex justify-content-start align-items-start box-redesfooter">
                 <img src=${georjeo} style="width:25px;" class="mr-2"/>
                 <img src=${instagram} alt="" style="width:25px;" class="mr-2"/>
@@ -27,18 +27,18 @@ function Footer () {
           </div>
           <div class="col-sm-12 col-md-4 mb-5 mb-md-0 d-flex justify-content-center align-items-center flex-column text-left">
             <div>
-                <h4>Tenemos para ti:</h4>
-                <p>Servicio de domicilio</p>
-                <p>Servicio de calidad</p>
-                <p>Los mejores precios</p>
+                <h4>We have for you:</h4>
+                <p>Lorem, ipsum dolor.</p>
+                <p>Lorem, ipsum dolor.</p>
+                <p>Lorem, ipsum dolor.</p>
               </div>
           </div>
           <div class="col-sm-12 col-md-4 d-flex justify-content-center align-items-center flex-column text-left">
             <div>
-              <h4>Nuestros servicio:</h4>
-              <p>Formateo de S.O</p>
-              <p>Instalación de programas</p>
-              <p>Limpieza y mantenimiento</p>
+              <h4>Our services:</h4>
+              <p>Lorem, ipsum dolor.</p>
+              <p>Lorem, ipsum dolor.</p>
+              <p>Lorem, ipsum dolor.</p>
             </div>
           </div>
         </div>

@@ -1,43 +1,55 @@
-import calidad from '../../public/images/calidad.svg';
+import asesoria from '../../public/images/petition.svg';
 import calidadNegro from '../../public/images/calidadnegro.svg';
 
 const renderCardsIndex = () => {
     const contentCardsIndex = document.getElementById('cards-index');
     contentCardsIndex.innerHTML = `
-        <div class="container mt-5 pt-5 mb-5 pb-5">
-            <div class="row mb-4">
-                <h1 class="mx-auto font-weight-normal">Title</h1>
-            </div>
-            <div class="row">
-                <div class="col-4 animadoproposal">
-                    <div class="card card-index p-4" id="contenedor-card-1">
-                        <img src=${calidad} alt="" width="50px" class="mb-3">
-                        <div class="card-body p-0">
-                            <h5 class="card-title">title</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui dicta, exercitationem sint voluptates consequuntur ad.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4 animadoproposal">
-                    <div class="card card-index p-4" id="contenedor-card-2" style="background: #21325b;">
-                        <img src=${calidad} alt="" width="50px" class="mb-3">
-                        <div class="card-body p-0">
-                            <h5 class="card-title">title</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui dicta, exercitationem sint voluptates consequuntur ad.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4 animadoproposal">
-                    <div class="card card-index p-4" id="contenedor-card-3" style="background: #f5ca99;">
-                        <img src=${calidad} alt="" width="50px" class="mb-3">
-                        <div class="card-body p-0">
-                            <h5 class="card-title">title</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui dicta, exercitationem sint voluptates consequuntur ad.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="container-fluid  p-3 p-md-5">
+    <div class="row mt-5">
+      <div class="col-12">
+        <div>
+          <p class="m-0 parrafo-primario-services" style="color: #9b9b9b">AREAS OF PRACTICES</p>
+          <h1 class="mb-5">Services</h1>
         </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-3 animadoproposal mb-3 mb-md-3">
+        <div class="bg-white p-5">
+          <img src=${asesoria} alt="" width="50px" class="mb-3">
+          <h2>Hello world</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem suscipit harum assumenda incidunt excepturi eligendi quasi labore repudiandae. Voluptatem, labore.</p>
+          <a href="" class="border-bottom border-primary pb-2 text-decoration-none ">LEARN MORE</a>
+        </div>
+      </div>
+      <div class="col-12 col-md-3 animadoproposal mb-3 mb-md-3">
+        <div class="bg-white p-5">
+          <img src=${asesoria} alt="" width="50px" class="mb-3">
+          <h2>Hello world</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem suscipit harum assumenda incidunt excepturi eligendi quasi labore repudiandae. Voluptatem, labore.</p>
+          <a href="" class="border-bottom border-primary pb-2 text-decoration-none">LEARN MORE</a>
+        </div>
+      </div>
+      <div class="col-12 col-md-3 animadoproposal mb-3 mb-md-3">
+        <div class="bg-white p-5">
+          <img src=${asesoria} alt="" width="50px" class="mb-3">
+          <h2>Hello world</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem suscipit harum assumenda incidunt excepturi eligendi quasi labore repudiandae. Voluptatem, labore.</p>
+          <a href="" class="border-bottom border-primary pb-2 text-decoration-none">LEARN MORE</a>
+        </div>
+      </div>
+      <div class="col-12 col-md-3 animadoproposal mb-3 mb-md-3">
+        <div class="bg-white p-5">
+          <img src=${asesoria} alt="" width="50px" class="mb-3">
+          <h2>Hello world</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem suscipit harum assumenda incidunt excepturi eligendi quasi labore repudiandae. Voluptatem, labore.</p>
+          <a href="" class="border-bottom border-primary pb-2 text-decoration-none ">LEARN MORE</a>
+        </div>
+      </div>
+      <div class="col-3"></div>
+      <div class="col-3"></div>
+    </div>
+  </div>
     
     `
     let animado = document.querySelectorAll(".animadoproposal");
@@ -51,7 +63,8 @@ const renderCardsIndex = () => {
             animado[i].style.opacity = 1;
             animado[0].classList.add("mostrarIzquierdaProposal");
             animado[1].classList.add("mostrarArribaProposal");
-            animado[2].classList.add("mostrarDerechaProposal");
+            animado[2].classList.add("mostrarArribaProposal");
+            animado[3].classList.add("mostrarDerechaProposal");
 
         }
         }
@@ -62,44 +75,44 @@ const renderCardsIndex = () => {
     
     // funciones que remplazan imagenes blancas a negras
 
-    document.getElementById('contenedor-card-1').addEventListener('mouseover', () =>{
-        let newImage = document.images[0];
+    // document.getElementById('contenedor-card-1').addEventListener('mouseover', () =>{
+    //     let newImage = document.images[4];
 
-        newImage.src = calidadNegro;
-    });
+    //     newImage.src = calidadNegro;
+    // });
 
-    document.getElementById('contenedor-card-2').addEventListener('mouseover', () =>{
-        let newImage = document.images[1];
+    // document.getElementById('contenedor-card-2').addEventListener('mouseover', () =>{
+    //     let newImage = document.images[5];
 
-        newImage.src = calidadNegro;
-    });
+    //     newImage.src = calidadNegro;
+    // });
 
-    document.getElementById('contenedor-card-3').addEventListener('mouseover', () =>{
-        let newImage = document.images[2];
+    // document.getElementById('contenedor-card-3').addEventListener('mouseover', () =>{
+    //     let newImage = document.images[6];
 
-        newImage.src = calidadNegro;
-    });
+    //     newImage.src = calidadNegro;
+    // });
 
 
-    // funciones que remplazan imagenes negras a blancas
+    // // funciones que remplazan imagenes negras a blancas
 
-    document.getElementById('contenedor-card-1').addEventListener('mouseout', () =>{
-        let newImage = document.images[0];
+    // document.getElementById('contenedor-card-1').addEventListener('mouseout', () =>{
+    //     let newImage = document.images[4];
         
-        newImage.src = calidad;
-    });
+    //     newImage.src = calidad;
+    // });
 
-    document.getElementById('contenedor-card-2').addEventListener('mouseout', () =>{
-        let newImage = document.images[1];
+    // document.getElementById('contenedor-card-2').addEventListener('mouseout', () =>{
+    //     let newImage = document.images[5];
         
-        newImage.src = calidad;
-    });
+    //     newImage.src = calidad;
+    // });
 
-    document.getElementById('contenedor-card-3').addEventListener('mouseout', () =>{
-        let newImage = document.images[2];
+    // document.getElementById('contenedor-card-3').addEventListener('mouseout', () =>{
+    //     let newImage = document.images[6];
         
-        newImage.src = calidad;
-    })
+    //     newImage.src = calidad;
+    // })
     
 }
 

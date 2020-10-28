@@ -1,102 +1,28 @@
-import Image1 from '../../public/images/negocio.jpg'
+import image1 from '../../public/images/negociacion.jpg'
 
 const renderServicesIndex = () => {
     const textServices = document.getElementById("services-index");
     textServices.innerHTML += `
-  
-    <div class="container-fluid marketing px-3 px-md-5 mt-5 pt-5">
-  
-      <div class="text-center mb-5">
-          <h1 class="font-weight-normal">Our services</h1>
-      </div>
-      
-      <div class="row px-0 pr-md-4 py-0 mb-5 mx-2 mx-md-5 rounded row-service featurette animadoservices Regular shadow">
-          <div class="col-12 col-md-4 p-0">
-            <div class="text-center mb-4 mb-md-0 columna-izquierda-servicios rounded">
-              <img src=${Image1} alt="" class="image-services rounded" width="100%" height="100%">
-              <div class="overlay rounded"></div>
-            </div>  
+    <div class="container container-services my-5 py-5">
+      <div class="row">
+        <div class="col-12 col-md-6 mb-4 mb-md-0">
+          <div class="pr-0 pr-md-4">
+            <h1 class="mb-4">Welcome</h1>
+            <h5 class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quisquam sequi rem nam illo voluptates!</h5>
+            <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro quo culpa, voluptates repellendus magni autem facere, vitae enim magnam a iure, deleniti veritatis? Eveniet nesciunt repudiandae ut beatae labore ipsa dicta recusandae quidem voluptate eum expedita, incidunt asperiores doloremque nemo corrupti ducimus dolorum voluptates repellat odio vitae aut. Dolore, sequi.</p>
+            <a href="" class="btn btn-primary btn-lg px-5 py-3  rounded-0 button-services">GET A FREE CONSULTATION</a>
           </div>
-          <div class="col-12 col-md-5 my-5 p-4 d-flex align-items-center">
-            <div class="columna-central-servicios ">
-              <h3 class="mb-3 ">title1 <span class="text-muted">title2</span></h3>
-                <p class=" lead mb-4 mb-md-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui dicta, exercitationem sint voluptates consequuntur ad.</p>
-            </div>  
+        </div>
+        <div class="col-12 col-md-6 ">
+          <div class="p-0" style="width:100%; height:100%;">
+            <img src=${image1} alt="" width="100%"  height="100%" class="image-services pl-0 pl-md-4" ">
           </div>
-          <div class="col-12 col-md-3 d-flex align-items-center border-left my-5">
-            <div class="d-inline-block h-auto w-auto pl-2 pl-md-3">
-              <h1 class="number-service">1,500+</h1>
-              <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa consequatur</p>
-            </div>  
-          </div>
-      </div>
-  
-      <div class="row px-3 pr-md-0 py-0 mb-5 mx-2 mx-md-5 rounded row-service featurette animadoservices Regular shadow">
-          <div class=" col-12 col-md-3 d-flex align-items-center border-right  my-5">
-            <div class=" d-inline-block h-auto w-auto pr-2 pr-md-3 text-right">
-              <h1 class="number-service">1,500+</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa consequatur</p>
-            </div>   
-          </div>
-          <div class=" col-12 col-md-5 d-flex justify-content-center align-items-center">
-            <div class="columna-central-servicios text-right">
-              <h3 class="mb-3 ">title1 <span class="text-muted">title</span></h3>
-              <p class=" mb-4 mb-md-0 lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui dicta, exercitationem sint voluptates consequuntur ad.</p>
-            </div>
-          </div>
-          <div class="col-12 col-md-4 text-center p-0">
-            <div class="text-center mb-4 mb-md-0 columna-izquierda-servicios-2 rounded">
-              <img src=${Image1} alt="" class="image-services rounded" width="100%" height="100%">
-              <div class="overlay rounded"></div>
-            </div> 
-          </div>
-      </div>
-  
-      <div class="row px-0 pr-md-4 py-0 mb-5 mx-2 mx-md-5 rounded row-service featurette animadoservices Regular shadow">
-          <div class="col-12 col-md-4 p-0">
-            <div class="text-center mb-4 mb-md-0 columna-izquierda-servicios rounded">
-              <img src=${Image1} alt="" class="image-services rounded" width="100%" height="100%">
-              <div class="overlay rounded"></div>
-            </div>  
-          </div>
-          <div class="col-12 col-md-5 my-5 d-flex align-items-center">
-            <div class="columna-central-servicios ">
-              <h3 class="mb-3 ">title1 <span class="text-muted">title2</span></h3>
-                <p class=" lead mb-4 mb-md-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui dicta, exercitationem sint voluptates consequuntur ad.</p>
-            </div>  
-          </div>
-          <div class="col-12 col-md-3 d-flex align-items-center border-left my-5">
-            <div class="d-inline-block h-auto w-auto pl-2 pl-md-3">
-              <h1 class="number-service">1,500+</h1>
-              <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa consequatur</p>
-            </div>  
-          </div>
-      </div>
-  
-      <div class="row text-center">
-        <div class="col-12 mb-5">
-          <a href="/servicios" class="btn btn-1">View all services <i class="fas fa-arrow-circle-right ml-2"></i></a>
         </div>
       </div>
-      <hr class="featurette-divider">
-  
     </div>
   
     `
-    let animado = document.querySelectorAll(".animadoservices");
-  
-    function mostrarScroll () {
-      let scrollTop = document.documentElement.scrollTop;
-      for ( var i = 0; i < animado.length; i++){
-        let alturaAnimado = animado [i].offsetTop;
-         if(alturaAnimado - 500 < scrollTop){
-           animado[i].style.opacity = 1;
-           animado[i].classList.add("mostrarArribaService");
-         }
-      }
-    }
-    
-    window.addEventListener("scroll", mostrarScroll);
+   
   
   }
   

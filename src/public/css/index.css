@@ -6,7 +6,7 @@ body {
 }
 
 /* ---------------estilos componente navigation-------------- */
-.header-top-line, .header-main, .button-services, .btn, a, .parrafo-primario-services, .text-1-call-me, .text-1-cases-of-success {
+.header-top-line, .header-main, .button-services, .btn, a, .parrafo-primario-services, .text-1-call-me, .text-1-cases-of-success, .parrafo-testimonial {
   font-family:'Arimo', sans-serif;
   letter-spacing: .125rem;
   font-weight: 700;
@@ -237,6 +237,20 @@ body {
     color: white;
   }
 
+
+  /* ------------estilos componente testimonial------------------- */
+
+  #testimonial{
+    background-color: #f9f9f9;
+  }
+  .swiper-container {
+    width: 100%;
+    height: 400px;
+  }
+
+  .card-testimonial{
+    border-left: 3px #007bff solid;
+  }
 
   /* ------------------media-queries----------------------- */
 

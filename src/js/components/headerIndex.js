@@ -6,9 +6,9 @@ const renderHeaderIndex = () => {
             <div class="row ml-0 ml-md-5  mr-0">
                 <div class="col-12 col-md-6 p-0 d-flex justify-content-center align-items-center columna-izquierda-header-index ">
                     <div class="pt-0 pt-md-5 pr-0 pr-md-5 "> 
-                        <h1 class="display-4 pr-0 p-md-0 mb-2  title-header text-white">Espeialistas en </h1>
+                        <h1 class="display-4 pr-0 p-md-0 mb-2  title-header text-white">Especialistas en </h1>
                         <h1 class="display-4 pr-0 p-md-0 mb-4  title-header"><span class="typed"></span></h1>
-                        <h5 class="mb-4 font-weight-normal text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur voluptate voluptatum illum provident</h5>
+                        <h5 class="mb-4 font-weight-normal text-white">Ofrecemos asesorías acerca de Fotomultas y Comparendos con posibles irregularidades que puedan llevar a su exoneración.</h5>
                         <a href="" class="btn btn-primary btn-lg mr-2 rounded-0"><i class="fa fa-whatsapp fa-lg mr-2"></i>WHATSAPP</a>
                         <a href="" class="btn btn-outline-primary btn-lg rounded-0 bg-white boton-facebook"><i class="fab fa-facebook-f mr-2"></i>FACEBOOK</a>
                     </div>

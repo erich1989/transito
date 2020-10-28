@@ -4,6 +4,7 @@ import Services from '../components/servicesIndex';
 import Cards from '../components/cardsIndex';
 import CallMe from '../components/callMe';
 import CasesOfSuccess from '../components/casesOfSuccessIndex';
+import Testimonial from '../components/testimonial';
 import Prices from '../components/pricingIndex';
 import Footer from '../components/footer';
 
@@ -18,6 +19,7 @@ const renderIndex = () =>{
     Cards();
     CallMe();
     CasesOfSuccess();
+    Testimonial();
     Prices();
     Footer();
 }

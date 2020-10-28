@@ -4,7 +4,7 @@ const Prices = () => {
     let precioPro = 45000;
 
     textPrices.innerHTML += `
-    <h1 class="text-center  mt-5 mb-5 font-weight-normal">Pricing</h1>
+    <h1 class="text-center  mt-5 mb-5 ">Pricing</h1>
     <div class="container mt-5">
     <div class="card-deck mb-3 text-center">
   
